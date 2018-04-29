@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span id="moves">0</span><span> Moves</span>
+            
+            <span id="timer-min">00</span>
+			<span>&colon;</span>
+			<span id="timer-sec">00</span>
+
+
+            <div class="restart" id="restart">
+            <span>Restart </span>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="deck"></ul>
+        
+    </div>
+    
+		<div class="cong-popup" id="popup">
+			<div class="popup">
+				<i class="fa fa-check" aria-hidden="true"></i>
+				<h1>Congratulation&excl; you won&excl;</h1>
+				<p id="win-details"></p>
+				<button id="play-again">Play again&excl;</button>
+				
+			</div>
+		</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
