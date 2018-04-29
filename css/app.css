@@ -185,18 +185,7 @@ PopUp styles
 /*
 add media queries 
 */
-@media screen and (max-width: 780px) {
-  .deck {
-    max-width: 300px;
-    min-height: auto;
-    padding-bottom: 17px;
-  }
-
-  .deck .card {
-    height: 50px;
-    width: 50px;
-    margin-bottom: 17px;
-  }
+@media screen and (max-width: 701px) {
   .deck .card.show {
     font-size: 23px;
    }
@@ -213,7 +202,34 @@ add media queries
 	.score-panel #timer-min {
 	margin-left: 5px;
 	}
+}
 
+@media screen and (min-width:450px) and (max-width: 700px) {
+  .deck {
+    max-width: 500px;
+    min-height: auto;
+    padding-bottom: 17px;
+  }
+
+  .deck .card {
+    height: 98px;
+    width: 98px;
+    margin-bottom: 17px;
+  }
+
+}
+@media screen and (max-width: 500px) {
+  .deck {
+    max-width: 300px;
+    min-height: auto;
+    padding-bottom: 17px;
+  }
+
+  .deck .card {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 17px;
+  }
 }
 
 @media screen and (max-width: 422px) {
