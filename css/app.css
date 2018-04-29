@@ -197,7 +197,12 @@ add media queries
     width: 50px;
     margin-bottom: 17px;
   }
-
+  .deck .card.show {
+    font-size: 23px;
+   }
+  .deck .card.match {
+    font-size: 23px;
+    }
   .score-panel {
     max-width: 70%;
     padding-bottom: 0;
