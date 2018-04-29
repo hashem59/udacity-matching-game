@@ -29,6 +29,8 @@
 
 ## How to play
 
+![preview](https://image.ibb.co/k0VfPH/Capturaaaaaaae.png) 
+
 Each turn:
 
 1-The player flips one card over to reveal its underlying symbol.
