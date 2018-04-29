@@ -170,11 +170,8 @@ function removeOpenCards() {
 // Remove all classes except "match"
 function removeClasses() {
     for (let i = 0; i < cards.length; i++) {
-        cards[i].classList.remove("shake", "wrong", "open", "show");
+        cards[i].classList.remove("shake", "wrong", "open", "show", "flipInY");
         removeOpenCards();
-        //		if (this.classList.contains("match")) {
-        //			this.style.pointerEvents = "none";
-        //		}
     }
 }
 
