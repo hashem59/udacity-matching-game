@@ -89,8 +89,6 @@ for (let x in cards) {
             if (openCrds[0].classList[2] === openCrds[1].classList[2]) {
                 openCrds[0].classList.add("match", "rubberBand");
                 openCrds[1].classList.add("match", "rubberBand");
-                openCrds[0].style.pointerEvents = "none";
-                openCrds[1].style.pointerEvents = "none";
                 mactchedCrds += 1;
                 moves++;
                 removeOpenCards();
@@ -107,14 +105,24 @@ for (let x in cards) {
                 setTimeout(removeClasses, 1100);
                 moves++;
             }
-            // if user clicked three cards in same time make third card clickable again check line 80
-        } else {
-            openCrds[2].style.pointerEvents = "auto";
         }
+	setTimeout(cardsClickable, 1100);
         increaseMoves();
         restartGame();
     });
 }
+
+//maks cards clickable again after checking matching
+function cardsClickable() {
+	for ( let j = 0; j < cards.length; j++) {
+		if (!(cards[j].classList.contains("match")) &&
+			!(cards[j].classList.contains("open"))
+		   ) {
+			cards[j].style.pointerEvents = "auto";
+		}
+	}
+}
+
 
 /* 
 Setup Timer
