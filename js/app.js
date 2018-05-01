@@ -86,6 +86,9 @@ for (let x in cards) {
         openCrds.push(cards[x]);
         //console.log(openCrds);
         if (openCrds.length === 2) {
+	    for ( let j = 0; j < cards.length; j++) {
+	    cards[j].style.pointerEvents = "none";
+            }
             if (openCrds[0].classList[2] === openCrds[1].classList[2]) {
                 openCrds[0].classList.add("match", "rubberBand");
                 openCrds[1].classList.add("match", "rubberBand");
