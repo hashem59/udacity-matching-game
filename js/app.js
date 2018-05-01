@@ -86,9 +86,9 @@ for (let x in cards) {
         openCrds.push(cards[x]);
         //console.log(openCrds);
         if (openCrds.length === 2) {
-	    for ( let j = 0; j < cards.length; j++) {
-	    cards[j].style.pointerEvents = "none";
-            }
+			for ( let j = 0; j < cards.length; j++) {
+				cards[j].style.pointerEvents = "none";
+			}
             if (openCrds[0].classList[2] === openCrds[1].classList[2]) {
                 openCrds[0].classList.add("match", "rubberBand");
                 openCrds[1].classList.add("match", "rubberBand");
@@ -101,22 +101,20 @@ for (let x in cards) {
                 // If classes don't match, add "wrong" class
                 openCrds[0].classList.add("shake", "wrong");
                 openCrds[1].classList.add("shake", "wrong");
-                openCrds[0].style.pointerEvents = "auto";
-                openCrds[1].style.pointerEvents = "auto";
                 // Set timeout to remove "show" and "open" class and make it clickale again
                 //and run removeOpenCards
                 setTimeout(removeClasses, 1100);
                 moves++;
             }
         }
-	setTimeout(cardsClickable, 1100);
+		setTimeout(cardsclickable, 1100);
         increaseMoves();
         restartGame();
     });
 }
 
 //maks cards clickable again after checking matching
-function cardsClickable() {
+function cardsclickable() {
 	for ( let j = 0; j < cards.length; j++) {
 		if (!(cards[j].classList.contains("match")) &&
 			!(cards[j].classList.contains("open"))
